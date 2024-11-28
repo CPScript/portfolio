@@ -101,10 +101,14 @@
         .contact-info a:hover {
             color: #ffcc00;
         }
-        @media (max-width: 768px) {
-            .skills .skill {
-                width: 100%;
-            }
+        .languages {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .language {
+            flex: 1 1 30%; /* Adjust the width as needed */
+            margin: 10px;
         }
         /* Animation */
         .fade-in {
@@ -134,155 +138,88 @@
             <p>Experienced Developer (System, Software, Web, Network) with a demonstrated history of working in the information technology and services industry. Skilled in various programming languages and technologies.</p>
         </div>
         <div class="section skills fade-in">
-            <h3>Skills</h3>
-            <div class="skill">
-                <h4>x86_64 Assembly , C, C#, Rust</h4>
-                <div class="language-group">
-                    <button class="language-button" onclick="window.open('https://example.com/x86_64-assembly', '_blank')">x86_64 Assembly</button>
+ <h3>Skills</h3>
+            <div class="languages">
+                <div class="language">
+                    <h4>x86_64 Assembly</h4>
+                    <button class="language-button" onclick="window.open('https://example.com/x86_64-assembly', '_blank')">Learn More</button>
                 </div>
-                <div class="language-group">
-                    <button class="language-button" onclick="window.open('https://example.com/c', '_blank')">C</button>
+                <div class="language">
+                    <h4>C</h4>
+                    <button class="language-button" onclick="window.open('https://example.com/c', '_blank')">Learn More</button>
                 </div>
-                <h4>C#</h4>
-                <div class="language-group">
-                    <button class="language-button" onclick="window.open('https://example.com/csharp', '_blank')">C#</button>
+                <div class="language">
+                    <h4>C#</h4>
+                    <button class="language-button" onclick="window.open('https://example.com/csharp', '_blank')">Learn More</button>
                 </div>
-                <div class="language-group">
-                    <button class="language-button" onclick="window.open('https://example.com/rust', '_blank')">Rust</button>
+                <div class="language">
+                    <h4>Rust</h4>
+                    <button class="language-button" onclick="window.open('https://example.com/rust', '_blank')">Learn More</button>
                 </div>
-                <p>Used to create bootloaders, firmware, and kernels to help/create operating systems and other low-level tools.</p>
-            </div>
-            <div class="skill">
-                <h4>Python</h4>
-                <div class="language-group">
-                    <button class="language-button" onclick="window.open('https://example.com/python', '_blank')">Python</button>
+                <div class="language">
+                    <h4>Python</h4>
+                    <button class="language-button" onclick="window.open('https://example.com/python', '_blank')">Learn More</button>
                 </div>
-                <p>Implemented for scripting, automation, and data analysis.</p>
-            </div>
-            <div class="skill">
-                <h4>C++, HTML, JavaScript</h4>
-                <div class="language-group">
-                    <button class="language-button" onclick="window.open('https://example.com/cplusplus', '_blank')">C++</button>
+                <div class="language">
+                    <h4>C++</h4>
+                    <button class ="language-button" onclick="window.open('https://example.com/cplusplus', '_blank')">Learn More</button>
                 </div>
-                <div class="language-group">
-                    <button class="language-button" onclick="window.open('https://example.com/html', '_blank')">HTML</button>
+                <div class="language">
+                    <h4>HTML</h4>
+                    <button class="language-button" onclick="window.open('https://example.com/html', '_blank')">Learn More</button>
                 </div>
-                <div class="language-group">
-                    <button class="language-button" onclick="window.open('https://example.com/javascript', '_blank')">JavaScript</button>
+                <div class="language">
+                    <h4>JavaScript</h4>
+                    <button class="language-button" onclick="window.open('https://example.com/javascript', '_blank')">Learn More</button>
                 </div>
-                <p>Used for high-level applications and web pages.</p>
-            </div>
-            <div class="skill">
-                <h4>Makefile</h4>
-                <div class="language-group">
-                    <button class="language-button" onclick="window.open('https://example.com/makefile', '_blank')">Makefile</button>
+                <div class="language">
+                    <h4>Java</h4>
+                    <button class="language-button" onclick="window.open('https://example.com/java', '_blank')">Learn More</button>
                 </div>
-                <p>Implemented to build automations and manage projects.</p>
-            </div>
-            <div class="skill">
-                <h4>Batch</h4>
-                <div class="language-group">
-                    <button class="language-button" onclick="window.open('https://example.com/batch', '_blank')">Batch</button>
+                <div class="language">
+                    <h4>SQL</h4>
+                    <button class="language-button" onclick="window.open('https://example.com/sql', '_blank')">Learn More</button>
                 </div>
-                <p>Used for scripting in Windows environments to automate tasks and exploitation.</p>
-            </div>
-            <div class="skill">
-                <h4>VBS</h4>
-                <div class="language-group">
-                    <button class="language-button" onclick="window.open('https://example.com/vbs', '_blank')">VBS</button>
+                <div class="language">
+                    <h4>PHP</h4>
+                    <button class="language-button" onclick="window.open('https://example.com/php', '_blank')">Learn More</button>
                 </div>
-                <p>First language I learned (I have never fully implemented it besides making goofy GUIs).</p>
-            </div>
-            <div class="skill">
-                <h4>Java</h4>
-                <div class="language-group">
-                    <button class="language-button" onclick="window.open('https://example.com/java', '_blank')">Java</button>
+                <div class="language">
+                    <h4>Ruby</h4>
+                    <button class="language-button" onclick="window.open('https://example.com/ruby', '_blank')">Learn More</button>
                 </div>
-                <p>Implemented for building cross-platform applications and enterprise solutions.</p>
-            </div>
-            <div class="skill">
-                <h4>SQL</h4>
-                <div class="language-group">
-                    <button class="language-button" onclick="window.open('https://example.com/sql', '_blank')">SQL</button>
+                <div class="language">
+                    <h4>GoLang</h4>
+                    <button class="language-button" onclick="window.open('https://example.com/golang', '_blank')">Learn More</button>
                 </div>
-                <p>Managing and querying databases.</p>
-            </div>
-            <div class="skill">
-                <h4>PHP</h4>
-                <div class="language-group">
-                    <button class="language-button" onclick="window.open('https://example.com/php', '_blank')">PHP</button>
+                <div class="language">
+                    <h4>Bash</h4>
+                    <button class="language-button" onclick="window.open('https://example.com/bash', '_blank')">Learn More</button>
                 </div>
-                <p>Utilized for server-side scripting and web development.</p>
-            </div>
-            <div class="skill">
-                <h4>Nim</h4>
-                <div class="language-group">
-                    <button class="language-button" onclick="window.open('https://example.com/nim', '_blank')">Nim</button>
+                <div class="language">
+                    <h4>TypeScript</h4>
+                    <button class="language-button" onclick="window.open('https://example.com/typescript', '_blank')">Learn More</button>
                 </div>
-                <p>Implemented for systems programming and web development with a focus on performance.</p>
- </div>
-            <div class="skill">
-                <h4>Ruby</h4>
-                <div class="language-group">
-                    <button class="language-button" onclick="window.open('https://example.com/ruby', '_blank')">Ruby</button>
+                <div class="language">
+                    <h4>Swift</h4>
+                    <button class="language-button" onclick="window.open('https://example.com/swift', '_blank')">Learn More</button>
                 </div>
-                <p>Implemented for web development, particularly Ruby on Rails.</p>
-            </div>
-            <div class="skill">
-                <h4>GoLang</h4>
-                <div class="language-group">
-                    <button class="language-button" onclick="window.open('https://example.com/golang', '_blank')">GoLang</button>
+                <div class="language">
+                    <h4>Kotlin</h4>
+                    <button class="language-button" onclick="window.open('https://example.com/kotlin', '_blank')">Learn More</button>
                 </div>
-                <p>Implemented for building scalable web services, cloud applications, and exploitation.</p>
-            </div>
-            <div class="skill">
-                <h4>Bash</h4>
-                <div class="language-group">
-                    <button class="language-button" onclick="window.open('https://example.com/bash', '_blank')">Bash</button>
+                <div class="language">
+                    <h4>Lua</h4>
+                    <button class="language-button" onclick="window.open('https://example.com/lua', '_blank')">Learn More</button>
                 </div>
-                <p>Used for scripting and automating tasks in Unix/Linux systems.</p>
-            </div>
-            <div class="skill">
-                <h4>Shell</h4>
-                <div class="language-group">
-                    <button class="language-button" onclick="window.open('https://example.com/shell', '_blank')">Shell</button>
+                <div class="language">
+                    <h4>Haskell</h4>
+                    <button class="language-button" onclick="window.open('https://example.com/haskell', '_blank')">Learn More</button>
                 </div>
-                <p>Used for command-line scripting in various operating systems.</p>
-            </div>
-            <div class="skill">
-                <h4>TypeScript</h4>
-                <div class="language-group">
-                    <button class="language-button" onclick="window.open('https://example.com/typescript', '_blank')">TypeScript</button>
+                <div class="language">
+                    <h4>Nim</h4>
+                    <button class="language-button" onclick="window.open('https://example.com/nim', '_blank')">Learn More</button>
                 </div>
-                <p>For building large-scale applications with static typing.</p>
-            </div>
-            <div class="skill">
-                <h4>Swift</h4>
-                <div class="language-group">
-                    <button class="language-button" onclick="window.open('https://example.com/swift', '_blank')">Swift</button>
-                </div>
-                <p>Employed for developing iOS and macOS applications.</p>
-            </div>
-            <div class="skill">
-                <h4>Lua</h4>
-                <div class="language-group">
-                    <button class="language-button" onclick="window.open('https://example.com/lua', '_blank')">Lua</button>
-                </div>
-                <p>Used for scripting in game development and embedded systems.</p>
-            </div>
-            <div class="skill">
-                <h4>Haskell</h4>
-                <div class="language-group">
-                    <button class="language-button" onclick="window.open('https://example.com/haskell', '_blank')">Haskell</button>
-                </div>
-                <p>Implemented for functional programming and academic research.</p>
-            </div>
-            <div class="skill">
-                <h4>Kotlin</h4>
-                <div class="language-group">
-                    <button class="language-button" onclick="window.open('https://example.com/kotlin', '_blank')">Kotlin</button>
-                </div>
-                <p>Used for Android app development and modern server-side applications.</p>
             </div>
         </div>
         <div class="section experience fade-in">
@@ -304,12 +241,11 @@
                 <h4>Kennesaw University Networking Certificate</h4>
                 <h4>Georgia Tech Networking Certificate</h4>
                 <h4>Georgia Tech Cyber Security Certificate</h4>
-                <h4>Georgia Tech Networking Certificate</h4>
                 <h4>Hawaii University Cyber Security Certificate</h4>
                 <h4>CS50 Assembly</h4>
                 <h4>CS50 C</h4>
                 <h4>CS50 C#</h4>
-                <h4>CS50 C++</h4
+                <h4>CS50 C++</h4>
                 <h4>CS50 Python</h4>
                 <h4>CS50 JavaScript</h4>
                 <h4>CS50 Java</h4>
