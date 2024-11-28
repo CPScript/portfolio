@@ -11,7 +11,7 @@
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #e9ecef;
+            background-color: #f4f4f4;
         }
         .container {
             width: 80%;
@@ -33,36 +33,11 @@
         .header h1 {
             margin: 10px 0 5px;
             font-size: 2.5em;
-            color: #333;
         }
         .header h2 {
             margin: 0;
             font-size: 1.5em;
             color: #666;
-        }
-        .language-buttons {
-            text-align: center;
-            margin: 20px 0;
-        }
-        .language-button {
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            padding: 10px 15px;
-            margin: 0 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-            display: flex;
-            align-items: center;
-        }
-        .language-button img {
-            width: 20px; /* Adjust the size of the icon */
-            height: 20px;
-            margin-right: 5px;
-        }
-        .language-button:hover {
-            background-color: #0056b3;
         }
         .section {
             margin: 20px 0;
@@ -72,11 +47,9 @@
             padding-bottom: 10px;
             margin-bottom: 20px;
             font-size: 1.8em;
-            color: #007BFF;
         }
         .section p {
             margin: 10px 0;
-            color: #555;
         }
         .skills, .experience, .education {
             display: flex;
@@ -104,10 +77,29 @@
             margin: 0 10px;
             color: #333;
             text-decoration: none;
-            transition: color 0.3s;
         }
         .contact-info a:hover {
             color: #007BFF;
+        }
+        .language-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .language-button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+        .language-button:hover {
+            background-color: #0056b3;
         }
         @media (max-width: 768px) {
             .skills .skill {
@@ -116,35 +108,13 @@
             }
         }
     </style>
-    <script>
-        function changeLanguage(lang) {
-            // Replace these URLs with the actual links for different language versions of the resume
-            const links = {
-                'en': 'https://example.com/resume-en',
-                'es': 'https://example.com/resume-es',
-                'fr': 'https://example.com/resume-fr'
-            };
-            window.location.href = links[lang];
-        }
-    </script>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <img alt="Profile picture of John Doe" src="https://storage.googleapis.com/a1aa/image/l8HUrS4ltGKNJdddVO8QaG 3Wi4o1re6JH8rdJFx5Uikcyr6JA.jpg"/>
+            <img alt="Profile picture of a professional individual with a friendly smile" src="https://storage.googleapis.com/a1aa/image/l8HUrS4ltGKNJdddVO8QaG3Wi4o1re6JH8rdJFx5Uikcyr6JA.jpg"/>
             <h1>John Doe</h1>
             <h2>Full Stack Developer</h2>
-        </div>
-        <div class="language-buttons">
-            <button class="language-button" onclick="changeLanguage('en')">
-                <img src="assets/english.png" alt="English Icon"/> English
-            </button>
-            <button class="language-button" onclick="changeLanguage('es')">
-                <img src="assets/spanish.png" alt="Spanish Icon"/> Español
-            </button>
-            <button class="language-button" onclick="changeLanguage('fr')">
-                <img src="assets/french.png" alt="French Icon"/> Français
-            </button>
         </div>
         <div class="section">
             <h3>About Me</h3>
@@ -189,15 +159,44 @@
                 <p>University of Technology, 2011 - 2015</p>
             </div>
         </div>
+        <div class="language-buttons">
+            <button class="language-button" onclick="window.open('https://example.com/x86_64-assembly', '_blank')">x86_64 Assembly</button>
+            <button class="language-button" onclick="window.open('https://example.com/python', '_blank')">Python</button>
+            <button class="language-button" onclick="window.open('https://example.com/c', '_blank')">C</button>
+            <button class="language-button" onclick="window.open('https://example.com/cplusplus', '_blank')">C++</button>
+            <button class="language-button" onclick="window.open('https://example.com/csharp', '_blank')">C#</button>
+            <button class="language-button" onclick="window.open('https://example.com/html', '_blank')">HTML</button>
+            <button class="language-button" onclick="window.open('https://example.com/makefile', '_blank')">Makefile</button>
+            <button class="language-button" onclick="window.open('https://example.com/batch', '_blank')">Batch</button>
+            <button class="language-button" onclick="window.open('https://example.com/vbs', '_blank')">VBS</button>
+            <button class="language-button" onclick="window.open('https://example.com/javascript', '_blank')">JavaScript</button>
+            <button class="language-button" onclick="window.open('https://example.com/java', '_blank')">Java</button>
+            <button class="language-button" onclick="window.open('https://example.com/sql', '_blank')">SQL</button>
+            <button class="language-button" onclick="window.open('https://example.com/php', '_blank')">PHP</button>
+            <button class="language-button" onclick="window.open('https://example.com/nim', '_blank')">Nim</button>
+            <button class="language-button" onclick="window.open('https://example.com/ruby', '_blank')">Ruby</button>
+            <button class="language-button" onclick="window.open('https://example.com/golang', '_blank')">GoLang</button>
+            <button class="language-button" onclick="window.open('https://example.com/bash', '_blank')">Bash</button>
+            <button class="language-button" onclick="window.open('https://example.com/shell', '_blank')">Shell</button>
+            <button class="language-button" onclick="window.open('https://example.com/typescript', '_blank')">TypeScript</button>
+            <button class="language-button" onclick="window.open('https://example.com/rust', '_blank')">Rust</button>
+            <button class="language-button" onclick="window.open('https://example.com/swift', '_blank')">Swift</button>
+            <button class="language-button" onclick="window.open('https://example.com/lua', '_blank')">Lua</button>
+            <button class="language-button" onclick ="window.open('https://example.com/haskell', '_blank')">Haskell</button>
+            <button class="language-button" onclick="window.open('https://example.com/kotlin', '_blank')">Kotlin</button>
+        </div>
         <div class="contact-info">
             <a href="mailto:john.doe@example.com">
-                <i class="fas fa-envelope"></i> john.doe@example.com
+                <i class="fas fa-envelope"></i>
+                john.doe@example.com
             </a>
             <a href="https://linkedin.com/in/johndoe">
-                <i class="fab fa-linkedin"></i> LinkedIn
+                <i class="fab fa-linkedin"></i>
+                LinkedIn
             </a>
             <a href="https://github.com/johndoe">
-                <i class="fab fa-github"></i> GitHub
+                <i class="fab fa-github"></i>
+                GitHub
             </a>
         </div>
     </div>
