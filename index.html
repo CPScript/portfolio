@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>Resume</title>
+    <title>Portfolio</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
     <style>
@@ -11,14 +11,13 @@
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #1a1a1a;
+            color: #ffffff;
         }
         .container {
             width: 80%;
             margin: 0 auto;
-            background: #fff;
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
         }
         .header {
@@ -33,17 +32,18 @@
         .header h1 {
             margin: 10px 0 5px;
             font-size: 2.5em;
+            color: #ff7f50;
         }
         .header h2 {
             margin: 0;
             font-size: 1.5em;
-            color: #666;
+            color: #ffcc00;
         }
         .section {
             margin: 20px 0;
         }
         .section h3 {
-            border-bottom: 2px solid #ddd;
+            border-bottom: 2px solid #ff7f50;
             padding-bottom: 10px;
             margin-bottom: 20px;
             font-size: 1.8em;
@@ -65,7 +65,7 @@
             margin: 10px 0;
         }
         .language-button {
-            background-color: #007BFF;
+            background-color: #ff7f50;
             color: white;
             border: none;
             border-radius: 5px;
@@ -73,14 +73,51 @@
             margin: 5px 0;
             cursor: pointer;
             font-size: 1em;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s, transform 0.3s;
         }
         .language-button:hover {
-            background-color: #0056b3;
+            background-color: #ffcc00;
+            transform: scale(1.05);
+        }
+        .experience, .education {
+            background: #2a2a2a;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .job, .school {
+            margin-bottom: 15px;
+        }
+        .contact-info {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .contact-info a {
+            color: #ff7f50;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+        .contact-info a:hover {
+            color: #ffcc00;
         }
         @media (max-width: 768px) {
             .skills .skill {
                 width: 100%;
+            }
+        }
+        /* Animation */
+        .fade-in {
+            animation: fadeIn 0.8s forwards;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
             }
         }
     </style>
@@ -90,17 +127,16 @@
         <div class="header">
             <img alt="Icon" src="https://avatars.githubusercontent.com/u/83523587?v=4"/>
             <h1>Disease</h1>
-            <h2>Machine programmer, software dev, hardware dev, design</h2>
+            <h2>Machine Programmer | Software Developer | Hardware Developer | Designer</h2>
         </div>
-        <div class="section">
+        <div class="section fade-in">
             <h3>About Me</h3>
-            <p>Experienced Developer(SYstem, Software, Web, network) with a demonstrated history of working in the information technology and services industry. Skilled in; x86_54 Assembly‚ python‚ C‚ C＋＋‚ C＃‚ html‚ Makefile‚ Batch‚ VBS‚ JavaScript‚ Java‚ SQL‚ PHP‚ Nim‚ Ruby‚ GoLang‚ bash‚ shell‚ Typescript‚ rust‚ swift‚ lua‚ haskell‚ and kotlin
-, and other technologies.</p>
+            <p>Experienced Developer (System, Software, Web, Network) with a demonstrated history of working in the information technology and services industry. Skilled in various programming languages and technologies.</p>
         </div>
-        <div class="section skills">
+        <div class="section skills fade-in">
             <h3>Skills</h3>
             <div class="skill">
-                <h4>x86_64 Assembly, C, C#, Rust</h4>
+                <h4>x86_64 Assembly , C, C#, Rust</h4>
                 <div class="language-group">
                     <button class="language-button" onclick="window.open('https://example.com/x86_64-assembly', '_blank')">x86_64 Assembly</button>
                 </div>
@@ -114,7 +150,7 @@
                 <div class="language-group">
                     <button class="language-button" onclick="window.open('https://example.com/rust', '_blank')">Rust</button>
                 </div>
-                <p>Used to create bootloaders, firmwarem, and kernels to help/create operating systems, and other low level tools.</p>
+                <p>Used to create bootloaders, firmware, and kernels to help/create operating systems and other low-level tools.</p>
             </div>
             <div class="skill">
                 <h4>Python</h4>
@@ -124,38 +160,38 @@
                 <p>Implemented for scripting, automation, and data analysis.</p>
             </div>
             <div class="skill">
-                <h4>C++, HTML, Javascript</h4>
+                <h4>C++, HTML, JavaScript</h4>
                 <div class="language-group">
                     <button class="language-button" onclick="window.open('https://example.com/cplusplus', '_blank')">C++</button>
                 </div>
                 <div class="language-group">
                     <button class="language-button" onclick="window.open('https://example.com/html', '_blank')">HTML</button>
                 </div>
-                <h4>JavaScript</h4>
                 <div class="language-group">
                     <button class="language-button" onclick="window.open('https://example.com/javascript', '_blank')">JavaScript</button>
                 </div>
-                <p>Used for high-level applications and web-pages</p>
+                <p>Used for high-level applications and web pages.</p>
+            </div>
             <div class="skill">
                 <h4>Makefile</h4>
                 <div class="language-group">
                     <button class="language-button" onclick="window.open('https://example.com/makefile', '_blank')">Makefile</button>
                 </div>
-                <p>Implemented to build automations and managing projects.</p>
+                <p>Implemented to build automations and manage projects.</p>
             </div>
             <div class="skill">
                 <h4>Batch</h4>
                 <div class="language-group">
                     <button class="language-button" onclick="window.open('https://example.com/batch', '_blank')">Batch</button>
                 </div>
-                <p>Used for scripting in Windows environments to automate tasks and exploitation</p>
+                <p>Used for scripting in Windows environments to automate tasks and exploitation.</p>
             </div>
             <div class="skill">
                 <h4>VBS</h4>
                 <div class="language-group">
                     <button class="language-button" onclick="window.open('https://example.com/vbs', '_blank')">VBS</button>
                 </div>
-                <p>First language i learned (i have never fully implemented it besides making goofy GUIs).</p>
+                <p>First language I learned (I have never fully implemented it besides making goofy GUIs).</p>
             </div>
             <div class="skill">
                 <h4>Java</h4>
@@ -169,7 +205,7 @@
                 <div class="language-group">
                     <button class="language-button" onclick="window.open('https://example.com/sql', '_blank')">SQL</button>
                 </div>
-                <p>managing and databases.</p>
+                <p>Managing and querying databases.</p>
             </div>
             <div class="skill">
                 <h4>PHP</h4>
@@ -184,20 +220,20 @@
                     <button class="language-button" onclick="window.open('https://example.com/nim', '_blank')">Nim</button>
                 </div>
                 <p>Implemented for systems programming and web development with a focus on performance.</p>
-            </div>
+ </div>
             <div class="skill">
                 <h4>Ruby</h4>
                 <div class="language-group">
                     <button class="language-button" onclick="window.open('https://example.com/ruby', '_blank')">Ruby</button>
                 </div>
-                <p>Implemented for web development, particularly; Ruby on Rails.</p>
+                <p>Implemented for web development, particularly Ruby on Rails.</p>
             </div>
             <div class="skill">
-                <h4>GoLang</h <h4>GoLang</h4>
+                <h4>GoLang</h4>
                 <div class="language-group">
                     <button class="language-button" onclick="window.open('https://example.com/golang', '_blank')">GoLang</button>
                 </div>
-                <p>Implemented for building scalable web services, cloud applications, and exploitation</p>
+                <p>Implemented for building scalable web services, cloud applications, and exploitation.</p>
             </div>
             <div class="skill">
                 <h4>Bash</h4>
@@ -218,7 +254,7 @@
                 <div class="language-group">
                     <button class="language-button" onclick="window.open('https://example.com/typescript', '_blank')">TypeScript</button>
                 </div>
-                <p>Sigma Sigma on the wall, whoes the skibidiest rizler of them all... for building large-scale applications with static typing.</p>
+                <p>For building large-scale applications with static typing.</p>
             </div>
             <div class="skill">
                 <h4>Swift</h4>
@@ -249,51 +285,49 @@
                 <p>Used for Android app development and modern server-side applications.</p>
             </div>
         </div>
-        <div class="section experience">
+        <div class="section experience fade-in">
             <h3>Experience</h3>
             <div class="job">
                 <h4>N/A</h4>
             </div>
-            <div class="job">
         </div>
-        <div class="section education">
+        <div class="section education fade-in">
             <h3>Education</h3>
             <div class="school">
                 <h4>Bachelor of Science in Computer Science</h4>
-                <h4>Harvard cyber security certificate<h4>
-                <h4>Harvard networking certificate<h4>
-                <h4>Harvard Machine learning Certificate<h4>
-                <h4>IBM SQL database sertificate<h4>
-                <h4>IBM Networking certificate<h4>
-                <h4>Georga-tech (2024-2028)<h4>
-                <h4>Kenisaw Uni Netwroking certificate<h4>
-                <h4>Georga-tech networking certificate<h4>
-                <h4>Georga-tech Cyber security certificate<h4>
-                <h4>Geroga-tech Networking certificate<h4>
-                <h4>Hawaii-Uni Cyber security certificate<h4>
-                <h4>CS50 Assembly<h4>
-                <h4>CS50 C<h4>
-                <h4>CS50 C#<h4>
-                <h4>CS50 C++<h4>
-                <h4>CS50 Python<h4>
-                <h4>CS50 Javascript<h4>
-                <h4>CS50 Java<h4>
-                <h4>CS50 Batch<h4>
-                <h4>CS50 Bash<h4>
-                <h4>CS50 Ruby<h4>
-                <h4>CS50 Kotlin<h4>
-                <h4>CS50 Bash<h4>
-                <h4>CS50 Haskell<h4>
-                <h4>CS50 PHP<h4>
-                <h4>CS50 Nim<h4>
-                <h4>CS50 SQL<h4>
-                <h4>CS50 GO-Lang<h4>
-                <h4>CS50 Rust<h4>
+                <h4>Harvard Cyber Security Certificate</h4>
+                <h4>Harvard Networking Certificate</h4>
+                <h4>Harvard Machine Learning Certificate</h4>
+                <h4>IBM SQL Database Certificate</h4>
+                <h4>IBM Networking Certificate</h4>
+                <h4>Georgia Tech (2024-2028)</h4>
+                <h4>Kennesaw University Networking Certificate</h4>
+                <h4>Georgia Tech Networking Certificate</h4>
+                <h4>Georgia Tech Cyber Security Certificate</h4>
+                <h4>Georgia Tech Networking Certificate</h4>
+                <h4>Hawaii University Cyber Security Certificate</h4>
+                <h4>CS50 Assembly</h4>
+                <h4>CS50 C</h4>
+                <h4>CS50 C#</h4>
+                <h4>CS50 C++</h4
+                <h4>CS50 Python</h4>
+                <h4>CS50 JavaScript</h4>
+                <h4>CS50 Java</h4>
+                <h4>CS50 Batch</h4>
+                <h4>CS50 Bash</h4>
+                <h4>CS50 Ruby</h4>
+                <h4>CS50 Kotlin</h4>
+                <h4>CS50 Haskell</h4>
+                <h4>CS50 PHP</h4>
+                <h4>CS50 Nim</h4>
+                <h4>CS50 SQL</h4>
+                <h4>CS50 GoLang</h4>
+                <h4>CS50 Rust</h4>
             </div>
         </div>
-        <div class="contact-info">
+        <div class="contact-info fade-in">
             <a href="https://github.com/CPScript">
-                <i class="fab fa-githu"></i>
+                <i class="fab fa-github"></i>
                 GitHub
             </a>
         </div>
