@@ -1,18 +1,17 @@
+<!DOCTYPE html>
 <html lang="en">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>
-   Resume
-  </title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
-  <style>
-   body {
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Resume</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <style>
+        body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #e9ecef;
         }
         .container {
             width: 80%;
@@ -20,6 +19,7 @@
             background: #fff;
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
         .header {
             text-align: center;
@@ -33,11 +33,36 @@
         .header h1 {
             margin: 10px 0 5px;
             font-size: 2.5em;
+            color: #333;
         }
         .header h2 {
             margin: 0;
             font-size: 1.5em;
             color: #666;
+        }
+        .language-buttons {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .language-button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            margin: 0 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            display: flex;
+            align-items: center;
+        }
+        .language-button img {
+            width: 20px; /* Adjust the size of the icon */
+            height: 20px;
+            margin-right: 5px;
+        }
+        .language-button:hover {
+            background-color: #0056b3;
         }
         .section {
             margin: 20px 0;
@@ -47,9 +72,11 @@
             padding-bottom: 10px;
             margin-bottom: 20px;
             font-size: 1.8em;
+            color: #007BFF;
         }
         .section p {
             margin: 10px 0;
+            color: #555;
         }
         .skills, .experience, .education {
             display: flex;
@@ -77,6 +104,7 @@
             margin: 0 10px;
             color: #333;
             text-decoration: none;
+            transition: color 0.3s;
         }
         .contact-info a:hover {
             color: #007BFF;
@@ -87,121 +115,91 @@
                 margin-right: 0;
             }
         }
-  </style>
- </head>
- <body>
-  <div class="container">
-   <div class="header">
-    <img alt="Profile picture of a professional individual with a friendly smile" height="150" src="https://storage.googleapis.com/a1aa/image/l8HUrS4ltGKNJdddVO8QaG3Wi4o1re6JH8rdJFx5Uikcyr6JA.jpg" width="150"/>
-    <h1>
-     John Doe
-    </h1>
-    <h2>
-     Full Stack Developer
-    </h2>
-   </div>
-   <div class="section">
-    <h3>
-     About Me
-    </h3>
-    <p>
-     Experienced Full Stack Developer with a demonstrated history of working in the information technology and services industry. Skilled in JavaScript, React, Node.js, and other modern web technologies.
-    </p>
-   </div>
-   <div class="section skills">
-    <h3>
-     Skills
-    </h3>
-    <div class="skill">
-     <h4>
-      JavaScript
-     </h4>
-     <p>
-      Proficient in ES6+, with experience in building dynamic web applications.
-     </p>
+    </style>
+    <script>
+        function changeLanguage(lang) {
+            // Replace these URLs with the actual links for different language versions of the resume
+            const links = {
+                'en': 'https://example.com/resume-en',
+                'es': 'https://example.com/resume-es',
+                'fr': 'https://example.com/resume-fr'
+            };
+            window.location.href = links[lang];
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img alt="Profile picture of John Doe" src="https://storage.googleapis.com/a1aa/image/l8HUrS4ltGKNJdddVO8QaG 3Wi4o1re6JH8rdJFx5Uikcyr6JA.jpg"/>
+            <h1>John Doe</h1>
+            <h2>Full Stack Developer</h2>
+        </div>
+        <div class="language-buttons">
+            <button class="language-button" onclick="changeLanguage('en')">
+                <img src="assets/english.png" alt="English Icon"/> English
+            </button>
+            <button class="language-button" onclick="changeLanguage('es')">
+                <img src="assets/spanish.png" alt="Spanish Icon"/> Español
+            </button>
+            <button class="language-button" onclick="changeLanguage('fr')">
+                <img src="assets/french.png" alt="French Icon"/> Français
+            </button>
+        </div>
+        <div class="section">
+            <h3>About Me</h3>
+            <p>Experienced Full Stack Developer with a demonstrated history of working in the information technology and services industry. Skilled in JavaScript, React, Node.js, and other modern web technologies.</p>
+        </div>
+        <div class="section skills">
+            <h3>Skills</h3>
+            <div class="skill">
+                <h4>JavaScript</h4>
+                <p>Proficient in ES6+, with experience in building dynamic web applications.</p>
+            </div>
+            <div class="skill">
+                <h4>React</h4>
+                <p>Experienced in building single-page applications using React and Redux.</p>
+            </div>
+            <div class="skill">
+                <h4>Node.js</h4>
+                <p>Skilled in building server-side applications using Node.js and Express.</p>
+            </div>
+            <div class="skill">
+                <h4>HTML & CSS</h4>
+                <p>Proficient in creating responsive and accessible web pages using HTML5 and CSS3.</p>
+            </div>
+        </div>
+        <div class="section experience">
+            <h3>Experience</h3>
+            <div class="job">
+                <h4>Senior Full Stack Developer</h4>
+                <p>XYZ Company, 2018 - Present</p>
+                <p>Lead a team of developers to build and maintain web applications, ensuring high performance and responsiveness.</p>
+            </div>
+            <div class="job">
+                <h4>Full Stack Developer</h4>
+                <p>ABC Corporation, 2015 - 2018</p>
+                <p>Developed and maintained web applications, collaborated with cross-functional teams to define and design new features.</p>
+            </div>
+        </div>
+        <div class="section education">
+            <h3>Education</h3>
+            <div class="school">
+                <h4>Bachelor of Science in Computer Science</h4>
+                <p>University of Technology, 2011 - 2015</p>
+            </div>
+        </div>
+        <div class="contact-info">
+            <a href="mailto:john.doe@example.com">
+                <i class="fas fa-envelope"></i> john.doe@example.com
+            </a>
+            <a href="https://linkedin.com/in/johndoe">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://github.com/johndoe">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+        </div>
     </div>
-    <div class="skill">
-     <h4>
-      React
-     </h4>
-     <p>
-      Experienced in building single-page applications using React and Redux.
-     </p>
-    </div>
-    <div class="skill">
-     <h4>
-      Node.js
-     </h4>
-     <p>
-      Skilled in building server-side applications using Node.js and Express.
-     </p>
-    </div>
-    <div class="skill">
-     <h4>
-      HTML &amp; CSS
-     </h4>
-     <p>
-      Proficient in creating responsive and accessible web pages using HTML5 and CSS3.
-     </p>
-    </div>
-   </div>
-   <div class="section experience">
-    <h3>
-     Experience
-    </h3>
-    <div class="job">
-     <h4>
-      Senior Full Stack Developer
-     </h4>
-     <p>
-      XYZ Company, 2018 - Present
-     </p>
-     <p>
-      Lead a team of developers to build and maintain web applications, ensuring high performance and responsiveness.
-     </p>
-    </div>
-    <div class="job">
-     <h4>
-      Full Stack Developer
-     </h4>
-     <p>
-      ABC Corporation, 2015 - 2018
-     </p>
-     <p>
-      Developed and maintained web applications, collaborated with cross-functional teams to define and design new features.
-     </p>
-    </div>
-   </div>
-   <div class="section education">
-    <h3>
-     Education
-    </h3>
-    <div class="school">
-     <h4>
-      Bachelor of Science in Computer Science
-     </h4>
-     <p>
-      University of Technology, 2011 - 2015
-     </p>
-    </div>
-   </div>
-   <div class="contact-info">
-    <a href="mailto:john.doe@example.com">
-     <i class="fas fa-envelope">
-     </i>
-     john.doe@example.com
-    </a>
-    <a href="https://linkedin.com/in/johndoe">
-     <i class="fab fa-linkedin">
-     </i>
-     LinkedIn
-    </a>
-    <a href="https://github.com/johndoe">
-     <i class="fab fa-github">
-     </i>
-     GitHub
-    </a>
-   </div>
-  </div>
- </body>
+</body>
 </html>
